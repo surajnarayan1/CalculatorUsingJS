@@ -1,0 +1,76 @@
+<html>
+
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="calculator.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<Title>
+		Calculator using javaScript
+	</Title>
+
+
+
+
+
+	<body onload= "startCalculator()"> 
+		<div id="Container">
+			<div><p>
+				<font color="white">
+				<center>Calculator</center>	 
+				</font></p>
+			</div>
+
+			<div align = "center" id="result">
+			
+		       <input type="text" name="usrname" id="display">
+
+                 
+
+			</div>
+
+			<div id="keypad">
+				<div id="first-rows">
+					<button class="del-bg" id="delete" onclick="deleted()">Del</button>
+					<button value="+" class="Addition" onclick="nextMove(this)">+</button>
+					<button value="%" class="Modulous" onclick="nextMove(this)">%</button>
+					<button value="off" class="off" onclick="off(this)">Off</button>
+				</div>
+
+				<div class="rows">
+					<button value="7"  class="num" onclick="nextMove(this)">7</button>
+					<button value="8"class="num" onclick="nextMove(this)">8</button>
+					<button value="9" class="num" onclick="nextMove(this)">9</button>
+					<button value="-" class="operation" onclick="nextMove(this)">-</button>
+				</div>
+
+				<div class="rows">
+					<button value="4" class="num" onclick="nextMove(this)">4</button>
+					<button value="5"class="num" onclick="nextMove(this)">5</button>
+					<button value="6" class="num" onclick="nextMove(this)">6</button>
+					<button value="*" class="operation" onclick="nextMove(this)">x</button>
+				</div>
+
+				<div class="rows">
+					<button value="1"  class="num" onclick="nextMove(this)">1</button>
+					<button value="2"  class="num" onclick="nextMove(this)">2</button>
+					<button value="3" class="num" onclick="nextMove(this)">3</button>
+					<button value="/"  class="operation" onclick="nextMove(this)">/</button>
+				</div>
+
+				<div class="rows">
+					<button value="0" class="num" onclick="nextMove(this)">0</button>
+					<button value="." class="dot" onclick="nextMove(this)">.</button>
+					<button value="=" class="operation" onclick="E()">=</button>
+					<button value="clear" class="clear" onclick="clearScreen(this)">CE</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+
+</html>
